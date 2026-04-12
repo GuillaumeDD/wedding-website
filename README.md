@@ -1,5 +1,7 @@
 # Wedding Website
 
+![Screenshot of the wedding website hero section](docs/screenshot.png)
+
 A static multilingual wedding website for a Lebanese-French multicultural wedding, built as a vibe-coded portfolio project.
 
 > **Vibe-coded:** This website was built with AI-assisted development (Claude). The design, structure, translations, and RTL support were all generated and iterated through conversational prompting — no manual boilerplate, no framework scaffolding. It is an example of what vibe coding can produce for a real, production-used project.
