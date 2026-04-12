@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#d0e8e0"/>
+  <text x="300" y="190" font-family="Georgia, serif" font-size="20" fill="#3d7a6b" text-anchor="middle">Honeymoon Destination</text>
+  <text x="300" y="220" font-family="Georgia, serif" font-size="14" fill="#5a9a8a" text-anchor="middle">[ [HONEYMOON_DESTINATION] ]</text>
+</svg>

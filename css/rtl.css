@@ -1,0 +1,182 @@
+/* 
+ * RTL (Right-to-Left) stylesheet for Arabic language support
+ * This stylesheet will be enabled when Arabic language is selected
+ */
+
+html[lang="ar"] {
+  direction: rtl;
+}
+
+html[lang="ar"] .language-switcher {
+  justify-content: flex-start;
+}
+
+/* Hero section RTL support */
+html[lang="ar"] .hero-content {
+  text-align: center;
+  direction: rtl;
+}
+
+html[lang="ar"] .hero h1,
+html[lang="ar"] .hero h2,
+html[lang="ar"] .hero p {
+  text-align: center;
+}
+
+/* Our Story section RTL support */
+html[lang="ar"] .our-story-content,
+html[lang="ar"] .quotes-section,
+html[lang="ar"] .cultural-sections {
+  text-align: right;
+  direction: rtl;
+}
+
+html[lang="ar"] .quote-block {
+  text-align: right;
+  direction: rtl;
+}
+
+html[lang="ar"] .culture-section {
+  text-align: right;
+  direction: rtl;
+}
+
+/* RSVP form RTL support */
+html[lang="ar"] .rsvp-form {
+  direction: rtl;
+}
+
+html[lang="ar"] .rsvp-form label,
+html[lang="ar"] .rsvp-form input,
+html[lang="ar"] .rsvp-form select,
+html[lang="ar"] .rsvp-form textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+html[lang="ar"] .rsvp-form button {
+  text-align: center;
+}
+
+/* Footer RTL support */
+html[lang="ar"] footer {
+  text-align: center;
+  direction: rtl;
+}
+
+/* Details section RTL support */
+html[lang="ar"] .details-content {
+  text-align: right;
+  direction: rtl;
+}
+
+html[lang="ar"] nav li {
+  margin: 0 var(--spacing-sm);
+}
+
+/* Timeline RTL layout fixes for proper column positioning */
+html[lang="ar"] .timeline-event {
+  flex-direction: row-reverse;
+}
+
+html[lang="ar"] .time {
+  text-align: right;
+  padding-left: var(--spacing-lg);
+  padding-right: 0;
+  direction: rtl;
+}
+
+html[lang="ar"] .event {
+  padding-right: var(--spacing-lg);
+  padding-left: 0;
+  text-align: right;
+}
+
+html[lang="ar"] .timeline::before {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+
+html[lang="ar"] .timeline-event::before {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+
+/* Travel and Accommodation RTL Support */
+html[lang="ar"] .travel-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+html[lang="ar"] .travel-info-box, 
+html[lang="ar"] .accommodation-info-box {
+  text-align: right;
+  direction: rtl;
+  flex: 1;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0; /* Override individual margins, use flex gap instead */
+}
+
+html[lang="ar"] .travel-info-box h3, 
+html[lang="ar"] .accommodation-info-box h3 {
+  text-align: right;
+}
+
+html[lang="ar"] .travel-info-box p, 
+html[lang="ar"] .accommodation-info-box p {
+  text-align: right;
+}
+
+html[lang="ar"] .travel-info-box ul, 
+html[lang="ar"] .accommodation-info-box ul {
+  padding-right: var(--spacing-md);
+  padding-left: 0;
+  list-style-position: inside;
+  text-align: right;
+}
+
+html[lang="ar"] .travel-info-box li, 
+html[lang="ar"] .accommodation-info-box li {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: right;
+  direction: rtl;
+}
+
+
+@media (max-width: 768px) {
+  html[lang="ar"] .timeline::before {
+    right: 30px;
+    left: auto;
+  }
+  
+  html[lang="ar"] .time, 
+  html[lang="ar"] .event {
+    padding-right: 60px;
+    padding-left: 0;
+    text-align: right;
+  }
+  
+  html[lang="ar"] .timeline-event {
+    flex-direction: column;
+  }
+  
+  html[lang="ar"] .timeline-event::before {
+    right: 30px;
+    left: auto;
+  }
+  
+  /* Mobile RTL travel sections - natural sizing */
+  html[lang="ar"] .travel-info-box, 
+  html[lang="ar"] .accommodation-info-box {
+    min-height: auto;
+    flex: none;
+  }
+  
+}

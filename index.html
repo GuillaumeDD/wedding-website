@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <title>[NAME_1] & [NAME_2]'s Wedding</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cultural-elements.css">
+    <link rel="stylesheet" href="css/rtl.css" id="rtl-stylesheet" disabled>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('fr')">Français</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('ar')">عربي</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="#our-story" data-i18n="nav_our_story">Notre Histoire</a></li>
+                <li><a href="#schedule" data-i18n="nav_schedule">Planning du week-end</a></li>
+                <li><a href="#travel" data-i18n="nav_travel">Accès</a></li>
+                <li><a href="#wedding-list" data-i18n="nav_wedding_list">Liste de mariage</a></li>
+                <li><a href="#rsvp" data-i18n="nav_rsvp">RSVP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="assets/images/wedding-logo.svg" alt="[NAME_1] & [NAME_2] Wedding Logo" class="wedding-logo">
+                <div class="hero-text">
+                    <h1 data-i18n="hero_title">Nous nous marions !</h1>
+                    <h2 data-i18n="hero_names">[NAME_1] & [NAME_2]</h2>
+                    <p class="date" data-i18n="hero_date">[DATE_DAY1]</p>
+                    <p class="location" data-i18n="hero_location">[LOCATION]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-story" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="our_story_title">Notre Histoire</h2>
+                <div class="story-content">
+                    <div class="story-image">
+                        <img src="assets/images/couple-photo.svg" alt="Couple" data-i18n-alt="alt_couple">
+                    </div>
+                    <div class="story-text">
+                        <p data-i18n="our_story_intro">À travers les cultures et les siècles, on trouve des récits d'âmes destinées à se retrouver, liées par des forces plus grandes que le temps ou la distance.</p>
+
+                        <p data-i18n="our_story_legends">Dans la légende japonaise, l'Aka Ito (赤い糸), le « fil rouge du destin », relie deux cœurs faits l'un pour l'autre : un lien invisible, qui se tend, se tord, mais ne se rompt jamais. Maktub (مكتوب) murmure la sagesse arabe – « c'était écrit » – comme si l'amour est gravé dans les étoiles bien avant que deux chemins ne se croisent. Les « âmes sœurs », quant à elles, évoquent des âmes qui se reconnaissent au premier regard, comme après une longue attente.</p>
+
+                        <p data-i18n="our_story_meeting">Notre histoire est tissée de cette magie : en [YEAR_MET], une enfant du soleil de [ORIGIN_1] croise le chemin d'un Normand, fils de la campagne verdoyante et des ciels changeants de [ORIGIN_2]. Contre toute attente, leurs mondes se sont croisés à [CITY_MET], la ville de l'amour, où le hasard, ou peut-être le souffle discret du destin, les a réunis.</p>
+
+                        <p data-i18n="our_story_invitation">Venez nous rejoindre pour célébrer cette belle union et le début d'un nouveau chapitre de nos vies.</p>
+                    </div>
+                </div>
+
+                <div class="quotes-section">
+                    <div class="quote-container">
+                        <div class="cultural-quote">
+                            <p data-i18n="quote_lebanese">"Tu es l'huile d'olive de mon zaatar."</p>
+                            <span class="quote-author" data-i18n="quote_lebanese_author">— Dicton libanais</span>
+                        </div>
+                    </div>
+
+                    <div class="quote-container">
+                        <div class="cultural-quote">
+                            <p data-i18n="quote_french">"Tu es le pain de mon camembert."</p>
+                            <span class="quote-author" data-i18n="quote_french_author">— Dicton normand</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cultural-divider">
+                    <div class="icon-container">
+                        <div class="icon icon-cedar"></div>
+                        <div class="icon icon-eiffel"></div>
+                        <div class="icon icon-apple"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="schedule" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="schedule_title">Planning du week-end</h2>
+
+                <div class="day-section">
+                    <h3 class="day-title" data-i18n="schedule_day1_title">[DATE_DAY1]</h3>
+                    <div class="timeline">
+                        <div class="timeline-event">
+                            <div class="time" data-i18n="schedule_ceremony_time">16h00</div>
+                            <div class="event">
+                                <h3 data-i18n="schedule_ceremony_title">Mairie</h3>
+                                <p data-i18n="schedule_ceremony_desc">Rejoignez-nous pour notre mariage civil à [CEREMONY_VENUE].</p>
+                                <div class="event-location">
+                                    <p data-i18n="schedule_ceremony_location">Lieu : [CEREMONY_ADDRESS]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="time" data-i18n="schedule_cocktail_time">17h30</div>
+                            <div class="event">
+                                <h3 data-i18n="schedule_cocktail_title">Cocktail</h3>
+                                <p data-i18n="schedule_cocktail_desc">Profitez de boissons et d'amuse-bouches pendant que nous prenons des photos.</p>
+                                <div class="event-location">
+                                    <p data-i18n="schedule_cocktail_location">Lieu : [RECEPTION_VENUE], [RECEPTION_ADDRESS]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="time" data-i18n="schedule_reception_time">19h00</div>
+                            <div class="event">
+                                <h3 data-i18n="schedule_reception_title">Dîner et soirée dansante</h3>
+                                <p data-i18n="schedule_reception_desc">Dîner, danse et célébration jusqu'au bout de la nuit.</p>
+                                <div class="event-location">
+                                    <p data-i18n="schedule_cocktail_location">Lieu : [RECEPTION_VENUE], [RECEPTION_ADDRESS]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-section">
+                    <h3 class="day-title" data-i18n="schedule_day2_title">[DATE_DAY2]</h3>
+                    <div class="timeline">
+                        <div class="timeline-event">
+                            <div class="time" data-i18n="schedule_day2_event_time">11h00</div>
+                            <div class="event">
+                                <h3 data-i18n="schedule_day2_event_title">Brunch</h3>
+                                <p data-i18n="schedule_day2_event_desc">La fête n'est pas finie ! Retrouvons-nous pour un brunch libanais.</p>
+                                <div class="event-location">
+                                    <p data-i18n="schedule_day2_event_location">Lieu : [RECEPTION_VENUE], [RECEPTION_ADDRESS]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="travel_section_title">Accès & Hébergement</h2>
+
+                <div class="travel-content">
+                    <div class="travel-info-box">
+                    <h3 data-i18n="travel_title">Se rendre au mariage</h3>
+                    <p data-i18n="travel_intro">Vous pouvez facilement rejoindre la région en train depuis Paris ou Rouen :</p>
+
+                    <p>
+                        <span data-i18n="travel_train_emoji">🚆</span>
+                        <span data-i18n="travel_train_from">Depuis</span>
+                        <strong data-i18n="travel_train_station_paris">Paris Gare Saint-Lazare</strong>
+                        <span data-i18n="travel_train_or">ou</span>
+                        <strong data-i18n="travel_train_station_rouen">Rouen</strong><span data-i18n="travel_train_toward">, prenez un train en direction du</span>
+                        <strong data-i18n="travel_train_destination">Havre</strong><span data-i18n="travel_train_period">.</span>
+                    </p>
+
+                    <ul>
+                        <li><strong data-i18n="travel_station_breauté_name">[TRAIN_STATION_CEREMONY]</strong> <span data-i18n="travel_station_breauté_desc">est la gare la plus proche de la cérémonie ([CEREMONY_VENUE]).</span></li>
+                        <li><span data-i18n="travel_station_also">Vous pouvez également continuer jusqu'au</span> <strong data-i18n="travel_station_lehavre_name">Havre</strong><span data-i18n="travel_station_lehavre_desc">, plus proche du dîner ([RECEPTION_VENUE]).</span></li>
+                    </ul>
+
+                    <p>
+                        <span data-i18n="travel_taxi_emoji">🚖</span>
+                        <span data-i18n="travel_taxi_info">Depuis l'une ou l'autre gare, des taxis sont disponibles (nous vous conseillons de réserver à l'avance) :</span>
+                    </p>
+
+                    <ul>
+                        <li><strong data-i18n="travel_taxi_name">[TAXI_NAME]</strong> <span data-i18n="travel_taxi_number">— [TAXI_PHONE]</span></li>
+                    </ul>
+
+                    <p>
+                        <span data-i18n="travel_car_emoji">🚗</span>
+                        <span data-i18n="travel_car_flexibility">Pour plus de flexibilité, des voitures peuvent être louées à la</span>
+                        <strong data-i18n="travel_car_station">gare du Havre</strong><span data-i18n="travel_car_or_via">, ou via l'application</span>
+                        <strong data-i18n="travel_car_app">Getaround</strong><span data-i18n="travel_car_period">.</span>
+                    </p>
+
+                    <p>
+                        <span data-i18n="travel_note_emoji">💡</span>
+                        <span data-i18n="travel_note">À noter : le mariage se déroulera dans deux lieux proches (cérémonie et réception). Si vous n'avez pas de voiture, faites-le nous savoir — nous serons ravis de vous mettre en relation avec d'autres invités ou d'organiser un transport.</span>
+                    </p>
+                </div>
+
+                <div class="accommodation-info-box">
+                    <h3 data-i18n="accommodation_title">Hébergement</h3>
+                    <p>
+                        <span data-i18n="accommodation_intro_text">Voici quelques hôtels situés à proximité de la</span>
+                        <strong data-i18n="accommodation_station_name">gare du Havre</strong><span data-i18n="accommodation_colon"> :</span>
+                    </p>
+                    <ul>
+                        <li data-i18n="accommodation_hotel1">Nomad Hotel Le Havre Gare</li>
+                        <li data-i18n="accommodation_hotel2">Ibis Le Havre Centre</li>
+                        <li data-i18n="accommodation_hotel3">B&B HOTEL Le Havre Centre Gare</li>
+                        <li data-i18n="accommodation_hotel4">Novotel</li>
+                    </ul>
+                    <p data-i18n="accommodation_note">Si vous n'avez pas de voiture, pas d'inquiétude — nous veillerons à ce que vous puissiez rentrer à l'hôtel le soir.</p>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3 data-i18n="map_title">Carte</h3>
+                    <div class="map-placeholder">
+                        <!-- [MAP_EMBED] -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wedding-list" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="wedding_list_title">Liste de mariage</h2>
+                <div class="wedding-list-content">
+                    <div class="honeymoon-contribution">
+                        <p data-i18n="wedding_list_intro">Votre présence à notre mariage est le plus beau cadeau que nous puissions recevoir.</p>
+
+                        <img src="assets/images/honeymoon-destination.svg"
+                             alt="Voyage de noces"
+                             data-i18n-alt="honeymoon_image_alt"
+                             class="honeymoon-image"
+                             loading="lazy">
+
+                        <p data-i18n="wedding_list_honeymoon_text">Mais si vous souhaitez ajouter une petite cerise sur le gâteau et nous aider à créer de nouvelles aventures ensemble, vous pouvez contribuer à notre voyage de noces (nous pourrons vous fournir nos coordonnées bancaires si besoin ou bien directement à la réception).</p>
+
+                        <p class="wedding-list-thanks-text" data-i18n="wedding_list_thanks">Merci de votre générosité et de votre soutien dans cette nouvelle étape de notre vie !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rsvp" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="rsvp_title">RSVP</h2>
+                <p class="rsvp-intro" data-i18n="rsvp_intro">Veuillez nous faire savoir si vous pouvez vous joindre à nous avant le [RSVP_DEADLINE]</p>
+                <div class="rsvp-form-container">
+                    <!-- [RSVP_FORM_EMBED] -->
+                </div>
+                <div class="rsvp-backup">
+                    <p>
+                        <span data-i18n="rsvp_backup_text">Si le formulaire ci-dessus ne fonctionne pas, vous pouvez également</span>
+                        <a href="[RSVP_FORM_URL]" target="_blank" data-i18n="rsvp_backup_link">remplir le formulaire directement sur Google Forms</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer_text">Nous avons hâte de célébrer avec vous !</p>
+            <div class="cultural-divider">
+                <div class="icon-container">
+                    <div class="icon icon-cedar"></div>
+                    <div class="icon icon-eiffel"></div>
+                    <div class="icon icon-apple"></div>
+                </div>
+            </div>
+            <p class="copyright" data-i18n="footer_copyright">© [NAME_1] & [NAME_2]</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

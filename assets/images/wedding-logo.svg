@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#f5f0e8"/>
+  <text x="150" y="90" font-family="Georgia, serif" font-size="18" fill="#8b7355" text-anchor="middle">[NAME_1] &amp; [NAME_2]</text>
+  <text x="150" y="120" font-family="Georgia, serif" font-size="13" fill="#a09070" text-anchor="middle">Wedding Logo Placeholder</text>
+</svg>

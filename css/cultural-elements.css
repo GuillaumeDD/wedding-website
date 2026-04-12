@@ -1,0 +1,172 @@
+/* 
+ * Cultural Icons CSS
+ * Custom icons representing Lebanese and French cultural elements
+ */
+
+.icon-cedar {
+  background-image: url('../assets/images/olive-branch.svg');
+}
+
+.icon-eiffel {
+  background-image: url('../assets/images/eiffel-icon.svg');
+}
+
+.icon-apple {
+  background-image: url('../assets/images/apple-icon.svg');
+}
+
+
+.cultural-element {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.cultural-element .icon {
+  width: 48px;
+  height: 48px;
+  margin-right: var(--spacing-sm);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cultural-element .description {
+  flex: 1;
+}
+
+.cultural-divider {
+  display: flex;
+  align-items: center;
+  margin: var(--spacing-lg) 0;
+}
+
+.cultural-divider::before,
+.cultural-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--primary-color);
+  opacity: 0.3;
+}
+
+.cultural-divider .icon-container {
+  display: flex;
+  margin: 0 var(--spacing-md);
+}
+
+.cultural-divider .icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 var(--spacing-xs);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Cultural color accents */
+.lebanese-accent {
+  color: #c93756; /* Deep red from Lebanese flag */
+}
+
+.french-accent {
+  color: #1e3a5f; /* Deep blue from French flag */
+}
+
+
+/* Cultural quotes */
+.cultural-quote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  text-align: center;
+  max-width: 800px;
+  margin: var(--spacing-lg) auto;
+  padding: var(--spacing-md);
+  position: relative;
+}
+
+/* Quotes within story section - reduced spacing */
+.story-text .cultural-quote {
+  margin: var(--spacing-sm) auto;
+  padding: var(--spacing-sm);
+}
+
+.cultural-quote::before,
+.cultural-quote::after {
+  content: """;
+  font-size: 4rem;
+  position: absolute;
+  opacity: 0.2;
+  font-family: serif;
+}
+
+.cultural-quote::before {
+  top: -20px;
+  left: 0;
+}
+
+.cultural-quote::after {
+  content: """;
+  bottom: -40px;
+  right: 0;
+}
+
+.quote-author {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.9rem;
+  margin-top: var(--spacing-sm);
+}
+
+/* Cultural food and traditions section */
+.traditions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+.tradition-card {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.tradition-card:hover {
+  transform: translateY(-5px);
+}
+
+.tradition-card .image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.tradition-card .content {
+  padding: var(--spacing-md);
+}
+
+.tradition-card h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.tradition-card .origin {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.tradition-card .origin.lebanese {
+  background-color: rgba(201, 55, 86, 0.1);
+  color: #c93756;
+}
+
+.tradition-card .origin.french {
+  background-color: rgba(30, 58, 95, 0.1);
+  color: #1e3a5f;
+}
