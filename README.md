@@ -53,8 +53,7 @@ Photos of the couple and honeymoon destination have been replaced with SVG place
 │   ├── fr.json                 # French translations
 │   └── ar.json                 # Arabic translations
 ├── assets/
-│   ├── images/                 # Wedding logo, cultural illustrations
-│   └── icons/                  # SVG cultural icons (cedar, Eiffel, apple…)
+│   └── images/                 # Wedding logo and cultural SVG icons
 └── robots.txt                  # Blocks all search engine crawlers
 ```
 
