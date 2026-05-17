@@ -1,6 +1,8 @@
 # Wedding Website
 
 ![Screenshot of the wedding website hero section](docs/screenshot.png)
+![Screenshot of the Our Story section](docs/screenshot-our-story.png)
+![Screenshot of the Weekend Program section](docs/screenshot-weekend-program.png)
 
 A static multilingual wedding website for a Lebanese-French multicultural wedding, built as a vibe-coded portfolio project.
 
